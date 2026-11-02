@@ -34,7 +34,7 @@ After parsing the message you can easily just compare the messages type to provi
 For example:
 ```
 midi_msg_t msg;
-parse_midi(&msg, &your_buffer);
+parse_midi(&msg, your_buffer);
 if( msg.type == NOTE_ON ){
     play_note( msg.channel, msg.note, msg.velocity );
 }
