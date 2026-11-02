@@ -28,7 +28,7 @@ Returns -1 if MSB was missing.
 #define SYSTEM_ACTIVE_SENSING 0xFE
 #define SYSTEM_RESET 0xFF
 ```
-
+### Example
 After parsing the message you can easily just compare the messages type to provided list of commands and pass the message to your own functions.
 
 For example:
