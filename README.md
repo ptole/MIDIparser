@@ -4,8 +4,15 @@ C library for parsing messages to MIDI format.
 The parser takes in reference to a midi type struct and an uint8 buffer.
 Returns -1 if MSB was missing.
 
+The message struct contains:
+* type: Message type / command
+* channel: Target channel
+* data1: Contents of the second byte
+* data2: Contents of the third byte
 
-### List of commands and aliases 
+Data fields can be accessed via aliases.
+
+### List of definitions and aliases 
 ```
 NOTE_OFF 0x80
 NOTE_ON 0x90
@@ -27,7 +34,7 @@ SYSTEM_CONTINUE 0xFB
 SYSTEM_STOP 0xFC
 SYSTEM_ACTIVE_SENSING 0xFE
 SYSTEM_RESET 0xFF
-
+--------------------------------------
 note, velocity
 poly_note, pressure
 controller, data
