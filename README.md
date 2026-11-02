@@ -5,7 +5,7 @@ The parser takes in reference to a midi type struct and an uint8 buffer.
 Returns -1 if MSB was missing.
 
 
-### List of 
+### List of commands
 ```
 #define NOTE_OFF 0x80
 #define NOTE_ON 0x90
